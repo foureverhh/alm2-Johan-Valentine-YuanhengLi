@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      <h:head>
+         <title>Faclet Title</title>
+      </h:head>
+      <h:body>
+          <h:form>
+              <h:panelGrid columns="3">
+                  <h:outputLabel for="pName">Name:</h:outputLabel>
+                  <h:inputText id="pName" value="${person.name}"/> <br/>
+                  <h:outputLabel for="pName">Age:</h:outputLabel>
+                  <h:inputText id="pAge" value="${person.age}"/> <br/>
+                  <h:outputLabel for="pAge">Gender:</h:outputLabel>
+                  <h:inputText id="pGender" value="${person.gender}"/> <br/>
+              </h:panelGrid>
+              <!--<h:commandButton value="Submit" action="Main"/>-->
+              <h:commandButton value="Submit" action="${person.showFortune()}"/>
+          </h:form>
+          <br/>
+          <h:outputLabel for="fortune">Fortune</h:outputLabel> <br/>
+          <h:inputTextarea id="fortune" cols="18" rows="10" style="width:400px" value="${person.fortune}">
+          </h:inputTextarea>
+
+          <!--<h:outputLabel value="${person.name}"/>-->
+      </h:body>
+</html>
+
