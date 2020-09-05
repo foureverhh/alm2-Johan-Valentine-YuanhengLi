@@ -17,7 +17,7 @@ public class Translator {
         }else {
             result.append("Something you have to take care, ");
         }
-        result.append(" according to your ").append(name).append(", ").append(age).append(", ").append(gender);
+        result.append(" according to your name: ").append(name).append(", your age: ").append(age).append(", and your gender: ").append(gender);
         result.append( ", you should eat well and sleep well. You will have a better future!");
         return result.toString();
     }
