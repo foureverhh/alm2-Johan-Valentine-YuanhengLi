@@ -29,7 +29,7 @@ pipeline {
             agent any
             steps{
                 echo 'Deploying ......'
-                sh 'asadmin --port 4848 deploy --force --name alm-jsf-1.0-SNAPSHOT --contextroot alm-jsf-1.0-SNAPSHOT target/alm-jsf-1.0-SNAPSHOT.war'
+                sh 'asadmin --port 4848 deploy --force --name alm-jsf-1.0-SNAPSHOT --contextroot alm-jsf-1.0-SNAPSHOT --properties enable-implicit-cdi=false target/alm-jsf-1.0-SNAPSHOT.war'
             }
         }
     }
