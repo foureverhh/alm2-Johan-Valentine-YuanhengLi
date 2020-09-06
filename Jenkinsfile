@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    parameters {
+        choice (name:'DEPLOY_ENV',choices:['int','stage','prod'],description:'Target environment')
+    }
+    agent any
     stages {
         stage('Build') {
             steps {
@@ -13,23 +17,12 @@ pipeline {
                 }
             }
         }
-      /*   stage('Test') {
-            steps {
-                echo 'Testing..'
-                sh 'mvn test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying..'
-                sh "mvn run"
-        } */
 
         stage ('Deploy') {
             agent any
             steps{
                 echo 'Deploying ......'
-                sh 'asadmin --port 4848 deploy --force --name alm-jsf-1.0-SNAPSHOT --contextroot alm-jsf-1.0-SNAPSHOT --properties enable-implicit-cdi=false target/alm-jsf-1.0-SNAPSHOT.war'
+                sh 'asadmin --port 4848 deploy --force --name alm-jsf-${DEPLOY_ENV} --contextroot alm-jsf--${DEPLOY_ENV} --properties enable-implicit-cdi=false target/alm-jsf-1.0-SNAPSHOT.war'
             }
         }
     }
