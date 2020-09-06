@@ -10,9 +10,36 @@ pipeline {
                 sh 'mvn clean package'
             }
             post{
-                always{
-                echo 'Saving artifacts..'
-                archiveArtifacts artifacts: 'target/*.war', onlyIfSuccessful: true
+                //always{
+                //echo 'Saving artifacts..'
+                //archiveArtifacts artifacts: 'target/*.war', onlyIfSuccessful: true
+                //}
+                always {
+                    junit 'target/surefire-reports/*.xml'
+
+                    publishHTML([
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: false,
+                        keepAll: false,
+                        reportDir: 'target/surefire-reports/',
+                        reportFiles: 'index.html',
+                        reportName: 'Unit tests',
+                        reportTitles: 'Unit tests'
+                        ])
+
+                        publishHTML([
+                            allowMissing: false,
+                            alwaysLinkToLastBuild: false,
+                            keepAll: false,
+                            reportDir: 'target/site/jacoco/',
+                            reportFiles: 'index.html',
+                            reportName: 'Tests Coverage',
+                            reportTitles: 'Tests Coverage'
+                        ])
+                    }
+
+                success {
+                    archive 'target/alm-jsf-1.0-SNAPSHOT.war'
                 }
             }
         }
