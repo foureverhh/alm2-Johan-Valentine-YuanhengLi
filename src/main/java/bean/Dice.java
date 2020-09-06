@@ -10,7 +10,7 @@ public class Dice {
     private int random;
 
     public Dice() {
-        random = new Random().nextInt(10) + 1;
+        random = setMyRandom();
     }
 
     public int getRandom() {
@@ -19,5 +19,9 @@ public class Dice {
 
     public void setRandom(int random) {
         this.random = random;
+    }
+
+    public int setMyRandom(){
+        return new Random().nextInt(10) + 1;
     }
 }

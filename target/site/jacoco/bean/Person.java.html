@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="sv"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Person.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">project-report</a> &gt; <a href="index.source.html" class="el_package">bean</a> &gt; <span class="el_source">Person.java</span></div><h1>Person.java</h1><pre class="source lang-java linenums">package bean;
+
+
+
+import javax.enterprise.context.SessionScoped;
+import javax.faces.annotation.FacesConfig;
+import javax.inject.Inject;
+import javax.inject.Named;
+import java.io.Serializable;
+
+import static javax.faces.annotation.FacesConfig.Version.JSF_2_3;
+
+@FacesConfig(
+        // Activates CDI build-in beans
+        version = JSF_2_3
+)
+@Named
+@SessionScoped
+<span class="fc" id="L19">public class Person implements Serializable {</span>
+    private static final long serialVersionUID = 1L;
+    private String name;
+    private String age;
+    private String gender;
+    private String fortune;
+    @Inject
+    private Translator translator;
+    public String getName() {
+<span class="fc" id="L28">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="fc" id="L32">        this.name = name;</span>
+<span class="fc" id="L33">    }</span>
+
+    public String getAge() {
+<span class="fc" id="L36">        return age;</span>
+    }
+
+    public void setAge(String age) {
+<span class="fc" id="L40">        this.age = age;</span>
+<span class="fc" id="L41">    }</span>
+
+    public String getGender() {
+<span class="fc" id="L44">        return gender;</span>
+    }
+
+    public void setGender(String gender) {
+<span class="fc" id="L48">        this.gender = gender;</span>
+<span class="fc" id="L49">    }</span>
+
+    public String getFortune() {
+<span class="fc" id="L52">        return fortune;</span>
+    }
+
+    public void setFortune(String fortune) {
+<span class="fc" id="L56">        this.fortune = fortune;</span>
+<span class="fc" id="L57">    }</span>
+
+    public void showFortune(){
+<span class="nc" id="L60">        fortune = translator.showFortune(name,age,gender);</span>
+<span class="nc" id="L61">    }</span>
+
+    public Translator getTranslator() {
+<span class="fc" id="L64">        return translator;</span>
+    }
+
+    public void setTranslator(Translator translator) {
+<span class="fc" id="L68">        this.translator = translator;</span>
+<span class="fc" id="L69">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

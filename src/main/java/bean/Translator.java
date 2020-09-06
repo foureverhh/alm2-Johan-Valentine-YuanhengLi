@@ -21,4 +21,12 @@ public class Translator {
         result.append( ", you should eat well and sleep well. You will have a better future!");
         return result.toString();
     }
+
+    public Dice getDice() {
+        return dice;
+    }
+
+    public void setDice(Dice dice) {
+        this.dice = dice;
+    }
 }

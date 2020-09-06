@@ -60,4 +60,11 @@ public class Person implements Serializable {
         fortune = translator.showFortune(name,age,gender);
     }
 
+    public Translator getTranslator() {
+        return translator;
+    }
+
+    public void setTranslator(Translator translator) {
+        this.translator = translator;
+    }
 }
