@@ -1,12 +1,13 @@
 pipeline {
     //agent any
     agent {
-        docker { image 'alm2-johan-valentine-yuanhengli:alm' }
+        docker { image 'rasilva1986/java-maven:alm' }
     }
     parameters {
         choice (name:'DEPLOY_ENV',choices:['int','stage','prod'],description:'Target environment')
     }
     stages {
+
         stage('Build') {
             steps {
                 echo 'Building..'
