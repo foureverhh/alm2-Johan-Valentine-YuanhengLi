@@ -3,7 +3,6 @@ pipeline {
     parameters {
         choice (name:'DEPLOY_ENV',choices:['int','stage','prod'],description:'Target environment')
     }
-    agent any
     stages {
         stage('Build') {
             steps {
