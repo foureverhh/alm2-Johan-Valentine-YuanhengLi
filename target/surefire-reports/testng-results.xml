@@ -2,80 +2,80 @@
 <testng-results skipped="0" failed="0" total="17" passed="17">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="196" started-at="2020-09-06T20:35:12Z" finished-at="2020-09-06T20:35:12Z">
+  <suite name="Surefire suite" duration-ms="188" started-at="2020-09-06T20:51:04Z" finished-at="2020-09-06T20:51:04Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="196" started-at="2020-09-06T20:35:12Z" finished-at="2020-09-06T20:35:12Z">
+    <test name="Surefire test" duration-ms="188" started-at="2020-09-06T20:51:04Z" finished-at="2020-09-06T20:51:04Z">
       <class name="bean.DiceTest">
-        <test-method status="PASS" signature="setMyRandomTest()[pri:0, instance:setMyRandomTest(bean.DiceTest)]" name="setMyRandomTest" duration-ms="2" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="setMyRandomTest()[pri:0, instance:setMyRandomTest(bean.DiceTest)]" name="setMyRandomTest" duration-ms="9" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setMyRandomTest -->
-        <test-method status="PASS" signature="setRandom()[pri:0, instance:setRandom(bean.DiceTest)]" name="setRandom" duration-ms="1" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="setRandom()[pri:0, instance:setRandom(bean.DiceTest)]" name="setRandom" duration-ms="1" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setRandom -->
-        <test-method status="PASS" signature="getRandom()[pri:0, instance:getRandom(bean.DiceTest)]" name="getRandom" duration-ms="1" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="getRandom()[pri:0, instance:getRandom(bean.DiceTest)]" name="getRandom" duration-ms="1" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRandom -->
       </class> <!-- bean.DiceTest -->
       <class name="bean.PersonTest">
-        <test-method status="PASS" signature="getTranslator()[pri:0, instance:getTranslator(bean.PersonTest)]" name="getTranslator" duration-ms="11" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="getTranslator()[pri:0, instance:getTranslator(bean.PersonTest)]" name="getTranslator" duration-ms="1" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTranslator -->
-        <test-method status="PASS" signature="setFortune()[pri:0, instance:setFortune(bean.PersonTest)]" name="setFortune" duration-ms="1" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="setFortune()[pri:0, instance:setFortune(bean.PersonTest)]" name="setFortune" duration-ms="1" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setFortune -->
-        <test-method status="PASS" signature="getAge()[pri:0, instance:getAge(bean.PersonTest)]" name="getAge" duration-ms="1" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="getAge()[pri:0, instance:getAge(bean.PersonTest)]" name="getAge" duration-ms="0" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAge -->
-        <test-method status="PASS" signature="setTranslator()[pri:0, instance:setTranslator(bean.PersonTest)]" name="setTranslator" duration-ms="1" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="setTranslator()[pri:0, instance:setTranslator(bean.PersonTest)]" name="setTranslator" duration-ms="0" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setTranslator -->
-        <test-method status="PASS" signature="setAge()[pri:0, instance:setAge(bean.PersonTest)]" name="setAge" duration-ms="0" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="setAge()[pri:0, instance:setAge(bean.PersonTest)]" name="setAge" duration-ms="1" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setAge -->
-        <test-method status="PASS" signature="showFortune()[pri:0, instance:showFortune(bean.PersonTest)]" name="showFortune" duration-ms="0" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="showFortune()[pri:0, instance:showFortune(bean.PersonTest)]" name="showFortune" duration-ms="0" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- showFortune -->
-        <test-method status="PASS" signature="getName()[pri:0, instance:getName(bean.PersonTest)]" name="getName" duration-ms="0" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getName -->
-        <test-method status="PASS" signature="setGender()[pri:0, instance:setGender(bean.PersonTest)]" name="setGender" duration-ms="1" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="setGender()[pri:0, instance:setGender(bean.PersonTest)]" name="setGender" duration-ms="1" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setGender -->
-        <test-method status="PASS" signature="getFortune()[pri:0, instance:getFortune(bean.PersonTest)]" name="getFortune" duration-ms="1" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="getName()[pri:0, instance:getName(bean.PersonTest)]" name="getName" duration-ms="0" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getName -->
+        <test-method status="PASS" signature="getFortune()[pri:0, instance:getFortune(bean.PersonTest)]" name="getFortune" duration-ms="0" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getFortune -->
-        <test-method status="PASS" signature="getGender()[pri:0, instance:getGender(bean.PersonTest)]" name="getGender" duration-ms="0" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getGender -->
-        <test-method status="PASS" signature="setName()[pri:0, instance:setName(bean.PersonTest)]" name="setName" duration-ms="0" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="setName()[pri:0, instance:setName(bean.PersonTest)]" name="setName" duration-ms="1" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setName -->
+        <test-method status="PASS" signature="getGender()[pri:0, instance:getGender(bean.PersonTest)]" name="getGender" duration-ms="0" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGender -->
       </class> <!-- bean.PersonTest -->
       <class name="bean.TranslatorTest">
-        <test-method status="PASS" signature="showFortuneTest()[pri:0, instance:showFortuneTest(bean.TranslatorTest)]" name="showFortuneTest" duration-ms="1" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="showFortuneTest()[pri:0, instance:showFortuneTest(bean.TranslatorTest)]" name="showFortuneTest" duration-ms="0" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- showFortuneTest -->
-        <test-method status="PASS" signature="getDice()[pri:0, instance:getDice(bean.TranslatorTest)]" name="getDice" duration-ms="0" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="getDice()[pri:0, instance:getDice(bean.TranslatorTest)]" name="getDice" duration-ms="1" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDice -->
-        <test-method status="PASS" signature="setDice()[pri:0, instance:setDice(bean.TranslatorTest)]" name="setDice" duration-ms="1" started-at="2020-09-06T22:35:12Z" finished-at="2020-09-06T22:35:12Z">
+        <test-method status="PASS" signature="setDice()[pri:0, instance:setDice(bean.TranslatorTest)]" name="setDice" duration-ms="0" started-at="2020-09-06T22:51:04Z" finished-at="2020-09-06T22:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDice -->

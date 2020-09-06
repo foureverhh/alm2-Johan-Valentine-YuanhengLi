@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="0.012" tests="17" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="0.01" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2020.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -64,20 +64,20 @@
     <property name="ftp.nonProxyHosts" value="192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|127.0.0.1|localhost|*.localhost|local|*.local"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="getTranslator on getTranslator(bean.PersonTest)" classname="bean.PersonTest" time="0.003"/>
-  <testcase name="setFortune on setFortune(bean.PersonTest)" classname="bean.PersonTest" time="0"/>
+  <testcase name="setMyRandomTest on setMyRandomTest(bean.DiceTest)" classname="bean.DiceTest" time="0.006"/>
+  <testcase name="setRandom on setRandom(bean.DiceTest)" classname="bean.DiceTest" time="0.001"/>
+  <testcase name="getRandom on getRandom(bean.DiceTest)" classname="bean.DiceTest" time="0"/>
+  <testcase name="getTranslator on getTranslator(bean.PersonTest)" classname="bean.PersonTest" time="0"/>
+  <testcase name="setFortune on setFortune(bean.PersonTest)" classname="bean.PersonTest" time="0.001"/>
   <testcase name="getAge on getAge(bean.PersonTest)" classname="bean.PersonTest" time="0"/>
-  <testcase name="setTranslator on setTranslator(bean.PersonTest)" classname="bean.PersonTest" time="0.001"/>
-  <testcase name="setAge on setAge(bean.PersonTest)" classname="bean.PersonTest" time="0.001"/>
+  <testcase name="setTranslator on setTranslator(bean.PersonTest)" classname="bean.PersonTest" time="0"/>
+  <testcase name="setAge on setAge(bean.PersonTest)" classname="bean.PersonTest" time="0"/>
   <testcase name="showFortune on showFortune(bean.PersonTest)" classname="bean.PersonTest" time="0.001"/>
   <testcase name="getName on getName(bean.PersonTest)" classname="bean.PersonTest" time="0"/>
   <testcase name="setGender on setGender(bean.PersonTest)" classname="bean.PersonTest" time="0"/>
   <testcase name="getFortune on getFortune(bean.PersonTest)" classname="bean.PersonTest" time="0"/>
-  <testcase name="getGender on getGender(bean.PersonTest)" classname="bean.PersonTest" time="0.001"/>
-  <testcase name="setName on setName(bean.PersonTest)" classname="bean.PersonTest" time="0"/>
-  <testcase name="setMyRandomTest on setMyRandomTest(bean.DiceTest)" classname="bean.DiceTest" time="0.003"/>
-  <testcase name="setRandom on setRandom(bean.DiceTest)" classname="bean.DiceTest" time="0.001"/>
-  <testcase name="getRandom on getRandom(bean.DiceTest)" classname="bean.DiceTest" time="0.001"/>
+  <testcase name="getGender on getGender(bean.PersonTest)" classname="bean.PersonTest" time="0"/>
+  <testcase name="setName on setName(bean.PersonTest)" classname="bean.PersonTest" time="0.001"/>
   <testcase name="showFortuneTest on showFortuneTest(bean.TranslatorTest)" classname="bean.TranslatorTest" time="0"/>
   <testcase name="getDice on getDice(bean.TranslatorTest)" classname="bean.TranslatorTest" time="0"/>
   <testcase name="setDice on setDice(bean.TranslatorTest)" classname="bean.TranslatorTest" time="0"/>

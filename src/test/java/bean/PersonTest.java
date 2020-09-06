@@ -20,11 +20,10 @@ public class PersonTest {
     }
     @Test
     public void showFortune() {
-        translator.setDice(dice);
-        person.setFortune(translator.showFortune("User","24","Male"));
-        assertTrue(person.getFortune().contains("User"));
-        assertTrue(person.getFortune().contains("24"));
-        assertTrue(person.getFortune().contains("Male"));
+        String fortune1 = translator.showFortune(null,null,null);
+        person.showFortune();
+        String fortune2 = person.getFortune();
+        assertEquals(fortune1,fortune2);
     }
 
     @Test
