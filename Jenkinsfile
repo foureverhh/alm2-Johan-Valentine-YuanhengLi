@@ -1,5 +1,8 @@
 pipeline {
-    agent any
+    //agent any
+    agent {
+        docker { image 'alm2-johan-valentine-yuanhengli:alm' }
+    }
     parameters {
         choice (name:'DEPLOY_ENV',choices:['int','stage','prod'],description:'Target environment')
     }
@@ -27,16 +30,16 @@ pipeline {
                         reportTitles: 'Unit tests'
                         ])
 
-                        publishHTML([
-                            allowMissing: false,
-                            alwaysLinkToLastBuild: false,
-                            keepAll: false,
-                            reportDir: 'target/site/jacoco/',
-                            reportFiles: 'index.html',
-                            reportName: 'Tests Coverage',
-                            reportTitles: 'Tests Coverage'
-                        ])
-                    }
+                    publishHTML([
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: false,
+                        keepAll: false,
+                        reportDir: 'target/site/jacoco/',
+                        reportFiles: 'index.html',
+                        reportName: 'Tests Coverage',
+                        reportTitles: 'Tests Coverage'
+                    ])
+                }
 
                 success {
                     archive 'target/alm-jsf-1.0-SNAPSHOT.war'
