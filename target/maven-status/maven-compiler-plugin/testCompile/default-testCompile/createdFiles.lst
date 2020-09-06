@@ -1,3 +1,4 @@
-bean/DiceTest.class
+bean/ConfigurationBeanTest.class
 bean/TranslatorTest.class
+bean/DiceTest.class
 bean/PersonTest.class
